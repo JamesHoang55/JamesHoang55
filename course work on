@@ -1,0 +1,46 @@
+
+
+
+while (True):
+    try:
+        c_pass = int(input("Please enter your credits at pass :"))
+        if c_pass == 0 or c_pass == 20 or c_pass == 40 or c_pass == 60 or c_pass == 80 or c_pass == 100 or c_pass == 120:
+            print()
+        elif c_pass != 0 or c_pass != 20 or c_pass != 40 or c_pass != 60 or c_pass != 80 or c_pass != 100 or c_pass != 120:
+           print ("out of range")
+        break
+    except ValueError:
+        print("Integer required")
+        
+        
+    
+            
+while (True):
+    try:
+        c_defer = int(input("please enter your credits at defer :"))
+        break
+    except ValueError:
+        print("Integer required")
+        
+while (True):
+    try:        
+        c_fail = int(input("Please enter your credits at fail :"))
+        break
+    except ValueError:                  
+        print("Integer required")   
+ 
+c_total = (c_pass + c_defer + c_fail)
+if c_total > 120:
+    print ("Total incorrect")
+if c_pass == 120:
+    print ("progress")
+else:
+    print ("Module Tailer")
+
+
+
+
+
+
+#if c_pass != (0, 20, 40, 60, 80, 100, 120):
+    #print ("out of range")
